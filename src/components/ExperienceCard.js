@@ -1,8 +1,9 @@
-function ExperienceCard({ name }, { rating }) {
+function ExperienceCard(props) {
+  console.log(props.id);
   return (
-    <div>
+    <div key={props.id}>
       <h1>
-        I am {name} with a rating of {rating}
+        I am {props.firstname} {props.lastname} with a rating of {props.rating}
       </h1>
     </div>
   );

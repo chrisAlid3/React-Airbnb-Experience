@@ -1,14 +1,17 @@
 let experiences = [
   {
-    name: "experience 1",
+    firstname: "Emily",
+    lastname: "Brown",
     rating: "4.5",
   },
   {
-    name: "experience 2",
+    firstname: "Jude",
+    lastname: "White",
     rating: "4.9",
   },
   {
-    name: "experience 3",
+    firstname: "Conrad",
+    lastname: "Black",
     rating: "3.4",
   },
 ];
