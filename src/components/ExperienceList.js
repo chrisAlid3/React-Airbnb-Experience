@@ -1,11 +1,19 @@
 import experiences from "../allExperiences";
 import ExperienceCard from "./ExperienceCard";
 
-// Comment
 function ExperienceList() {
-  experiences.map((experience) => {
-    return <ExperienceCard name={experience.name} rating={experience.rating} />;
+  const experienceList = experiences.map((experience, i) => {
+    console.log(experience.rating);
+    return (
+      <ExperienceCard
+        firstname={experience.firstname}
+        lastname={experience.lastname}
+        rating={experience.rating}
+        id={i}
+      />
+    );
   });
+  return experienceList;
 }
 
 export default ExperienceList;
