@@ -8,7 +8,7 @@ import StarIcon from "@mui/icons-material/Star";
 function ExperienceCard(props) {
   return (
     <div key={props.id}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} type="outlined">
         <CardActionArea>
           <CardMedia
             component="img"
@@ -29,11 +29,10 @@ function ExperienceCard(props) {
                 {props.rating} {props.country}
               </div>
             </Typography>
-            <Typography variant="body" color="text.secondary">
+            <Typography variant="body2" color="text.secondary" mt={2}>
               {props.experienceType} with {props.firstname} {props.lastname}
             </Typography>
-            <br></br>
-            <Typography variant="footer" color="text.primary">
+            <Typography variant="subtitle2" color="text.primary" mt={2}>
               From {props.currency}
               {props.price} / person
             </Typography>
