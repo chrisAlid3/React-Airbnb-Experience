@@ -11,6 +11,7 @@ let experiences = [
     price: "$136",
     rating: "4.5",
     country: "USA",
+    soldout: false,
   },
   {
     image: cookingWoman,
@@ -21,6 +22,7 @@ let experiences = [
     currency: "£",
     rating: "4.9",
     country: "United Kingdom",
+    soldout: true,
   },
   {
     image: singer,
@@ -31,6 +33,7 @@ let experiences = [
     currency: "EUR",
     rating: "3.4",
     country: "Germany",
+    soldout: false,
   },
 ];
 

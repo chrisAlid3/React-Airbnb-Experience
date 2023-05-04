@@ -5,6 +5,7 @@ function ExperienceList() {
   const experienceList = experiences.map((experience, i) => {
     return (
       <ExperienceCard
+        key={i}
         image={experience.image}
         firstname={experience.firstname}
         lastname={experience.lastname}
@@ -13,7 +14,7 @@ function ExperienceList() {
         currency={experience.currency}
         rating={experience.rating}
         country={experience.country}
-        id={i}
+        soldout={experience.soldout}
       />
     );
   });
