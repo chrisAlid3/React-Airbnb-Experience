@@ -1,6 +1,6 @@
 import airbnbLogo from "../images/airbnb-logo.png";
 
-function Header() {
+function Navbar() {
   return (
     <div className="header">
       <img src={airbnbLogo} alt="Airbnb Logo" width="100px"></img>
@@ -8,4 +8,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
