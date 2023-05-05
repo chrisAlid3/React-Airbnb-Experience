@@ -23,7 +23,10 @@ function ExperienceCard(props) {
             </div>
           )}
           {props.online && (
-            <div className="image-badge" style={{ color: "green" }}>
+            <div
+              className="image-badge"
+              style={{ right: "16px", color: "green" }}
+            >
               Online
             </div>
           )}
