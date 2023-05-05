@@ -19,18 +19,7 @@ function ExperienceList() {
       />
     );
   });
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        alignContent: "space-around",
-        color: "red",
-      }}
-    >
-      {experienceList}
-    </div>
-  );
+  return <div className="experienceBox">{experienceList}</div>;
 }
 
 export default ExperienceList;

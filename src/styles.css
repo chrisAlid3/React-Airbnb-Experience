@@ -5,13 +5,23 @@
 
 .center {
   margin: auto;
-  width: 50%;
+  text-align: center;
   padding: 10px;
 }
 
 .subheader {
-  padding-left: 20px;
-  width: 20%;
+  padding: 20px, 0px, 20px, 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.experienceBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
 }
 
 .greyText {

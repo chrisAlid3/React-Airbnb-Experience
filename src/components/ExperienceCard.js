@@ -7,7 +7,7 @@ import StarIcon from "@mui/icons-material/Star";
 
 function ExperienceCard(props) {
   return (
-    <Card variant="outlined" sx={{ maxWidth: 345, mr: "50px", mb: "50px" }}>
+    <Card variant="outlined" sx={{ maxWidth: 230, mr: "50px", mb: "50px" }}>
       <CardActionArea>
         <div className="image-container">
           <CardMedia
