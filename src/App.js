@@ -1,5 +1,4 @@
 //import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Header from "./components/Navbar";
 import ImageCollection from "./components/ImageCollection";
@@ -13,16 +12,7 @@ function App() {
       <Header />
       <ImageCollection />
       <Subheader />
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignContent: "space-around",
-          color: "error",
-        }}
-      >
-        <ExperienceList />
-      </Box>
+      <ExperienceList />
     </Container>
     //  </CssBaseline>
   );

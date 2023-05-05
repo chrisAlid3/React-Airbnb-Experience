@@ -18,7 +18,18 @@ function ExperienceList() {
       />
     );
   });
-  return experienceList;
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignContent: "space-around",
+        color: "red",
+      }}
+    >
+      {experienceList}
+    </div>
+  );
 }
 
 export default ExperienceList;
