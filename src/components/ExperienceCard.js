@@ -17,7 +17,16 @@ function ExperienceCard(props) {
             alt={props.experience}
           />
 
-          {props.soldout && <div className="image-badge">Sold out</div>}
+          {props.soldout && (
+            <div className="image-badge" style={{ color: "red" }}>
+              Sold out
+            </div>
+          )}
+          {props.online && (
+            <div className="image-badge" style={{ color: "green" }}>
+              Online
+            </div>
+          )}
         </div>
         <CardContent>
           <Typography variant="body" color="text.secondary">

@@ -12,6 +12,7 @@ let experiences = [
     rating: "4.5",
     country: "USA",
     soldout: false,
+    online: true,
   },
   {
     image: cookingWoman,
@@ -23,6 +24,7 @@ let experiences = [
     rating: "4.9",
     country: "United Kingdom",
     soldout: true,
+    online: false,
   },
   {
     image: singer,
@@ -34,6 +36,7 @@ let experiences = [
     rating: "3.4",
     country: "Germany",
     soldout: false,
+    online: false,
   },
 ];
 

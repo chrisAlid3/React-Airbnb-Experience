@@ -15,6 +15,7 @@ function ExperienceList() {
         rating={experience.rating}
         country={experience.country}
         soldout={experience.soldout}
+        online={experience.online}
       />
     );
   });
