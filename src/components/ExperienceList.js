@@ -3,17 +3,23 @@ import ExperienceCard from "./ExperienceCard";
 
 function ExperienceList() {
   const experienceList = experiences.map((experience, i) => {
-    console.log(experience.rating);
     return (
       <ExperienceCard
+        key={i}
+        image={experience.image}
         firstname={experience.firstname}
         lastname={experience.lastname}
+        experienceType={experience.experienceType}
+        price={experience.price}
+        currency={experience.currency}
         rating={experience.rating}
-        id={i}
+        country={experience.country}
+        soldout={experience.soldout}
+        online={experience.online}
       />
     );
   });
-  return experienceList;
+  return <div className="experienceBox">{experienceList}</div>;
 }
 
 export default ExperienceList;
