@@ -4,33 +4,45 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
+import Box from "@mui/material/Box";
 
 function ExperienceCard(props) {
   return (
     <Card variant="outlined" sx={{ maxWidth: 230, mr: "50px", mb: "50px" }}>
       <CardActionArea>
-        <div className="image-container">
-          <CardMedia
-            component="img"
-            height="200"
-            image={props.image}
-            alt={props.experience}
-          />
+        <CardMedia
+          component="img"
+          height="200"
+          image={props.image}
+          alt={props.experience}
+        />
 
-          {props.soldout && (
-            <div className="image-badge" style={{ color: "red" }}>
+        {props.soldout && (
+          <Box
+            bgcolor="yellow"
+            sx={{ position: "absolute", top: "8px", left: "16px" }}
+          >
+            <Typography variant="subtitle2" color="error">
               Sold out
-            </div>
-          )}
-          {props.online && (
-            <div
-              className="image-badge"
-              style={{ right: "16px", color: "green" }}
-            >
+            </Typography>
+          </Box>
+        )}
+        {props.online && (
+          <Box
+            bgcolor="yellow"
+            sx={{
+              position: "absolute",
+              top: "8px",
+              right: "16px",
+              paddingRight: "5px",
+              paddingLeft: "5px",
+            }}
+          >
+            <Typography variant="subtitle2" color="green">
               Online
-            </div>
-          )}
-        </div>
+            </Typography>
+          </Box>
+        )}
         <CardContent>
           <Typography variant="body" color="text.secondary">
             <div

@@ -40,13 +40,13 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="default">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1, pt: 0.2 }}>
             <img src={airbnbLogo} alt="Airbnb Logo" width="100px"></img>
           </Box>
-          <Box sx={{ flexGrow: 0.1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -84,8 +84,8 @@ function Navbar() {
           </Box>
           <Box
             sx={{
+              flexGrow: 1,
               display: { xs: "flex", md: "none" },
-              mr: 5,
             }}
           >
             <img src={airbnbLogo} alt="Airbnb Logo" width="100px"></img>

@@ -1,5 +1,6 @@
 import experiences from "../allExperiences";
 import ExperienceCard from "./ExperienceCard";
+import Box from "@mui/material/Box";
 
 function ExperienceList() {
   const experienceList = experiences.map((experience, i) => {
@@ -19,7 +20,20 @@ function ExperienceList() {
       />
     );
   });
-  return <div className="experienceBox">{experienceList}</div>;
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        marginTop: "50px",
+        alignItems: "center",
+        justifyContent: "center",
+        alignContent: "spaceAround",
+      }}
+    >
+      {experienceList}
+    </Box>
+  );
 }
 
 export default ExperienceList;
