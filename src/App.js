@@ -7,7 +7,7 @@ import ExperienceList from "./components/ExperienceList";
 
 function App() {
   return (
-  <CssBaseline>
+    <CssBaseline>
       <Navbar />
       <ImageCollection />
       <Subheader />
