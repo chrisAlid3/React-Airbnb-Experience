@@ -4,7 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-import Box from "@mui/material/Box";
+import ImageBadge from "../utilities/ImageBadge";
 
 function ExperienceCard(props) {
   return (
@@ -16,32 +16,21 @@ function ExperienceCard(props) {
           image={props.image}
           alt={props.experience}
         />
-
         {props.soldout && (
-          <Box
+          <ImageBadge
+            position="left"
+            textColor="red"
             bgcolor="yellow"
-            sx={{ position: "absolute", top: "8px", left: "16px" }}
-          >
-            <Typography variant="subtitle2" color="error">
-              Sold out
-            </Typography>
-          </Box>
+            text="Sold out"
+          />
         )}
         {props.online && (
-          <Box
-            bgcolor="yellow"
-            sx={{
-              position: "absolute",
-              top: "8px",
-              right: "16px",
-              paddingRight: "5px",
-              paddingLeft: "5px",
-            }}
-          >
-            <Typography variant="subtitle2" color="green">
-              Online
-            </Typography>
-          </Box>
+          <ImageBadge
+            position="right"
+            textColor="green"
+            bgcolor="orange"
+            text="Online"
+          ></ImageBadge>
         )}
         <CardContent>
           <Typography variant="body" color="text.secondary">
