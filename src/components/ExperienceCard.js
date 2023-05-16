@@ -7,8 +7,20 @@ import StarIcon from "@mui/icons-material/Star";
 import ImageBadge from "../utilities/ImageBadge";
 
 function ExperienceCard(props) {
+  function handleClick() {
+    console.log("I was clicked");
+  }
+
+  function handleHover() {
+    console.log("I was hovered");
+  }
   return (
-    <Card variant="outlined" sx={{ maxWidth: 230, mr: "50px", mb: "50px" }}>
+    <Card
+      variant="outlined"
+      sx={{ maxWidth: 230, mr: "50px", mb: "50px" }}
+      onClick={handleClick}
+      onMouseOver={handleHover}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -20,7 +32,7 @@ function ExperienceCard(props) {
           <ImageBadge
             position="left"
             textColor="red"
-            bgcolor="yellow"
+            bgcolor="white"
             text="Sold out"
           />
         )}
@@ -28,7 +40,7 @@ function ExperienceCard(props) {
           <ImageBadge
             position="right"
             textColor="green"
-            bgcolor="orange"
+            bgcolor="white"
             text="Online"
           ></ImageBadge>
         )}
