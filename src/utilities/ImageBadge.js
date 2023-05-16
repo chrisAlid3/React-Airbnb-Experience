@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+/* Props: position, textColor, bgcolor, text */
 function ImageBadge(props) {
   let position = "";
 
@@ -14,8 +15,14 @@ function ImageBadge(props) {
     <Box>
       {position === "left" && (
         <Box
-          bgcolor={props.backgroundColor}
-          sx={{ position: "absolute", top: "8px", left: "16px" }}
+          sx={{
+            backgroundColor: props.bgcolor,
+            paddingLeft: "8px",
+            paddingRight: "8px",
+            position: "absolute",
+            top: "8px",
+            left: "16px",
+          }}
         >
           <Typography variant="subtitle2" color={props.textColor}>
             {props.text}
@@ -24,8 +31,14 @@ function ImageBadge(props) {
       )}
       {position === "right" && (
         <Box
-          bgcolor={props.backgroundColor}
-          sx={{ position: "absolute", top: "8px", right: "16px" }}
+          sx={{
+            backgroundColor: props.bgcolor,
+            paddingLeft: "8px",
+            paddingRight: "8px",
+            position: "absolute",
+            top: "8px",
+            right: "16px",
+          }}
         >
           <Typography variant="subtitle2" color={props.textColor}>
             {props.text}
